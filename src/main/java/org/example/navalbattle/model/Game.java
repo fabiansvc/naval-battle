@@ -5,4 +5,5 @@ package org.example.navalbattle.model;
  * This class manages the game state, player actions, and game mechanics.
  */
 public class Game {
+
 }

@@ -1,0 +1,5 @@
+module:org.example.navalbatlle
+org.example.navalbattle
+org.example.navalbattle.controller
+org.example.navalbattle.model
+org.example.navalbattle.view
