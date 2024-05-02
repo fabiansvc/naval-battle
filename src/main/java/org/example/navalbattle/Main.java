@@ -17,6 +17,16 @@ public class Main extends Application {
      * @param args the command-line arguments passed to the application. They are not used in this application.
      */
     public static void main(String[] args) {
+        int x = 10, y = 0, z;
+
+        try{
+            z = x / y;
+            System.out.println("Z = " + z);
+        }catch(ArithmeticException e){
+            String msg = e.getMessage();
+            System.out.println("An error has ocurred. The error is: " + msg);
+        }
+        System.out.println("At the end of the program");
         // Launches the JavaFX application
         launch();
     }

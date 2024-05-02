@@ -45,7 +45,9 @@ public class GameNavalBattleStage extends Stage {
      * @throws IOException if an error occurs while creating the instance.
      */
     public static GameNavalBattleStage getInstance() throws IOException {
-        return GameNavalBattleStageHolder.INSTANCE = new GameNavalBattleStage();
+        return  GameNavalBattleStageHolder.INSTANCE != null ?
+                GameNavalBattleStageHolder.INSTANCE :
+                (GameNavalBattleStageHolder.INSTANCE = new GameNavalBattleStage());
     }
 
     /**

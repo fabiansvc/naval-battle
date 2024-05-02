@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"org.example.navalbatlle","l":"org.example.navalbattle"},{"m":"org.example.navalbatlle","l":"org.example.navalbattle.controller"},{"m":"org.example.navalbatlle","l":"org.example.navalbattle.model"},{"m":"org.example.navalbatlle","l":"org.example.navalbattle.view"}];updateSearchResults();
