@@ -19,9 +19,14 @@ public class GameNavalBattleStage extends Stage {
      */
     public GameNavalBattleStage() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/navalbattle/game-naval-battle-view.fxml"));
-        Parent root = loader.load();
+        Parent root;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            // Re-throwing the caught IOException
+            throw new IOException("Error while loading FXML file", e);
+        }
         Scene scene = new Scene(root);
-
         // Configuring the stage
         setTitle("Batalla naval"); // Sets the title of the stage
         setScene(scene); // Sets the scene for the stage
@@ -45,7 +50,9 @@ public class GameNavalBattleStage extends Stage {
      * @throws IOException if an error occurs while creating the instance.
      */
     public static GameNavalBattleStage getInstance() throws IOException {
-        return GameNavalBattleStageHolder.INSTANCE = new GameNavalBattleStage();
+        return  GameNavalBattleStageHolder.INSTANCE != null ?
+                GameNavalBattleStageHolder.INSTANCE :
+                (GameNavalBattleStageHolder.INSTANCE = new GameNavalBattleStage());
     }
 
     /**

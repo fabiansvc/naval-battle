@@ -3,7 +3,6 @@ package org.example.navalbattle;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import org.example.navalbattle.view.GameNavalBattleStage;
-
 import java.io.IOException;
 
 /**
