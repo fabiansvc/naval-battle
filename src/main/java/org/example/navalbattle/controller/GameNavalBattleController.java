@@ -1,7 +1,6 @@
 package org.example.navalbattle.controller;
 
 import javafx.fxml.FXML;
-import org.example.navalbattle.view.GameNavalBattleStage;
 
 import java.io.IOException;
 
@@ -16,6 +15,6 @@ public class GameNavalBattleController {
      * It can be used to initialize the UI components and set up event handlers.
      */
     @FXML
-    public void initialize() throws IOException {
+    public void initialize() {
     }
 }
