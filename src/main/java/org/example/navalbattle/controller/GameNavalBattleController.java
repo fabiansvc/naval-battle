@@ -1,16 +1,18 @@
 package org.example.navalbattle.controller;
 
 import javafx.fxml.FXML;
-import org.example.navalbattle.model.FileCRUD;
-
-import java.io.IOException;
+import javafx.scene.layout.GridPane;
+import org.example.navalbattle.model.Boat;
 
 /**
  * Controller class for the Naval Battle game interface.
  * This class handles the initialization of the game interface.
  */
 public class GameNavalBattleController {
-    private FileCRUD fc;
+    @FXML
+    private GridPane gridPane;
+
+
     /**
      * Initializes the game interface.
      * This method is automatically called when the corresponding FXML file is loaded.
@@ -18,9 +20,6 @@ public class GameNavalBattleController {
      */
     @FXML
     public void initialize() {
-        fc = new FileCRUD("crud-player.txt");
-        fc.create("fabian");
-        //fc.update(0, "camila" );
-        //fc.delete(0);
+        gridPane.add(new Boat().getBoatGroup(), 2, 1);
     }
 }
